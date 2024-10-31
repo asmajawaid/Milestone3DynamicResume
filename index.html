@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Resume Generator</title>
+  <link rel="stylesheet" href="style.css">
+  </head>
+
+<body>
+  <div class="container">
+   
+
+    <form id="resume-form">
+      <div class="heading"><h1>Dynamic Resume Generator</h1></div>   
+      <h3>Personal Information</h3>
+
+<!--profile picture upload-->
+      <label for="profile-pic" >Upload Profile Picture:</label>
+      <input type="file" id="profile-pic" accept="image/*"><br>
+      <img id="profileDisplay" src="#" alt="Profile Picture">
+      
+<!--personal information-->
+      <label for="full-name">Full Name:</label>
+      <input type="text" id="full-name" required placeholder="Enter your full-name"><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required placeholder="Enter your email address"><br>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" required placeholder="Enter your phone Number"><br>
+    
+      <!--about me-->
+      <h3>About Me</h3>
+      <textarea id="about-me" rows="4" placeholder="Write a short bio..."></textarea><br>
+
+      <h3>Experience</h3>
+      <textarea id="my-experience" rows="4" placeholder="Describe your experience..."></textarea><br>
+
+      <h3>Education</h3>
+      <textarea id="education" rows="4" placeholder="List your education..."></textarea><br>
+
+      <h3>Skills</h3>
+      <input type="text" id="skills" placeholder="List your skills (comma-separated)" required><br>
+
+      
+
+    </form>
+
+    <br>
+
+  
+
+  <!-- Dynamic Resume Display -->
+  <div class="CV" id="CV">
+    <h1>Generating Resume</h1>
+    <img id="CVProfile" src="#" alt="Profile Picture"><br>
+    <h1 id="CVName">Your Name:</h1>
+    <p id="CVEmail"> <span></span></p>
+    <p id="CVPhone"> <span></span></p>
+    <h3>About Me</h3>
+    <p id="CVAboutme"></p>
+    <h3>Experience</h3>
+    <p id="CVExperience"></p>   
+    <h3>Education</h3>
+    <p id="CVEducation"></p>
+    <h3>Skills</h3>
+    <p id="CVSkills"></p>
+  </div>
+</div>
+  <script src="main.js"></script>
+
+</body>
+</html>

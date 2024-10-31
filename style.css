@@ -1,0 +1,123 @@
+/* Styling form and resume sections */
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 20px;
+  padding: 0;
+  background-color: #1e1e2f;
+}
+
+form {
+  background-color: #2b2b3d;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px #00ccff;
+  padding: 20px;
+  width: 40%;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 80%;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+}
+#CV {
+  color: beige;
+  background-color: #2b2b3d;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px #00ccff;
+  padding: 20px;
+  width: 40%;
+}
+h1 {
+  text-align: center;
+  color: white;
+  text-shadow: 0 2px 4px #00ccff;
+}
+#CVName {
+  text-align: left;
+}
+h3 {
+  color: white;
+  text-shadow: 2px 2px 4px #00ccff;
+}
+#resume-form label {
+  color: #00ccff;
+  background-color: lightaccent;
+}
+
+
+label {
+  display: block;
+  margin-top: 10px;
+  color: black;
+}
+
+input,
+textarea {
+  margin-top: 4px;
+  padding: 8px;
+  width: calc(100% - 1px);
+  border: 1px solid skyblue;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgb(194, 189, 189);
+}
+
+#profileDisplay {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: none;
+  margin-bottom: 15px;
+}
+#CVProfile {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 576px) {
+  /* extra small devices */
+  form{
+    width: 100%;
+  }
+  #CV{
+   max-width: 100%;
+  }
+  .container {
+    max-width: 100%;
+    flex-direction: column;
+  }
+  h1{
+    font-size: 1.5em;
+  }
+  h3{
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* small devices */
+  .container{
+  flex-direction: column;
+  }
+  form{
+    width: 50%;
+    padding-right: 35px;
+  }
+  #CV{
+    width: 40%;
+    padding-left: 35px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  /* medium devices */
+}
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  /* large devices */
+}
